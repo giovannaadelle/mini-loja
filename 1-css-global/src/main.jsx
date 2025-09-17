@@ -1,14 +1,10 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import Home from "./pages/Home";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React from 'react'
+import ReactDOM, { createRoot } from 'react-dom/client'
+import App from './App'
+import { ThemeProvider } from "./contexts/ThemeContext";
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-      </Routes>
-    </BrowserRouter>
-  </StrictMode>
+  <ThemeProvider>
+    <App/>
+  </ThemeProvider>
 );

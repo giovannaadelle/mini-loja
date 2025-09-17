@@ -1,21 +1,21 @@
-import React from "react";
-import "./NavBar.css";
+import { Button } from "./Button";
+import { IoMdCart } from "react-icons/io";
+import { useTheme } from "../contexts/ThemeContext";
 
-function NavBar() {
+export const Navbar = () => {
+  const { theme, toggleTheme } = useTheme()
+
   return (
-    <div className="nav-container">
-      <h2>Shop</h2>
+    <div className="navbar-container">
+      <h2>Cosmetic Store</h2>
 
-      <div className="btn-container">
-        <label class="switch">
-          <input type="checkbox" />
-          <span class="slider"></span>
-        </label>
-
-        <button>🛒</button>
-      </div>
+      <label className="navbar-toggle">
+        <input type="checkbox" />
+        <div className="navbar-toggle__background">
+          <div className="navbar-toggle__handle" onClick={toggleTheme}></div>
+        </div>
+      </label>
+      <Button text={<IoMdCart />} variant="cart"></Button>
     </div>
   );
-}
-
-export default NavBar;
+};
