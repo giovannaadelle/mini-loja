@@ -1,0 +1,38 @@
+.btn {
+  padding: 10px 20px;
+  border-radius: var(--border-radius);
+  display: flex;
+  cursor: pointer;
+}
+
+.brown {
+  background-color: var(--primary-color);
+  box-shadow: var(--shadow);
+  border: none;
+}
+
+.cart {
+  background-color: var(--tertiary-color);
+  color: white;
+  box-shadow: var(--shadow);
+  border: none;
+}
+
+.solid {
+  background-color: var(--tertiary-color);
+  color: white;
+  box-shadow: var(--shadow);
+  border: none;
+}
+
+.outline {
+  background-color: var(--tertiary-color);
+  box-shadow: var(--shadow);
+  border: 2px var(--secondary-color) solid;
+}
+
+.ghost {
+  color: white;
+  box-shadow: var(--shadow);
+  border: 1px black solid;
+}

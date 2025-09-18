@@ -15,7 +15,7 @@ export const Navbar = () => {
           <div className="navbar-toggle__handle" onClick={toggleTheme}></div>
         </div>
       </label>
-      <Button text={<IoMdCart />} variant="cart"></Button>
+      <Button text={<IoMdCart />} variant="outline"></Button>
     </div>
   );
 };
